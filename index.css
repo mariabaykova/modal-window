@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 20px;
+}
+
+.shadow {
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+/* настройки по умолчанию окна */
+  .modal-window {
+      width: 90%;
+      height: 25%;
+      border-radius: 8px;
+
+      position: fixed;
+      align-self: center;
+      top: 35%;
+
+      pointer-events: none; /* элемент невидим для событий мыши */
+
+      z-index: 100;
+      visibility: hidden; 
+      opacity: 0;
+      transition: visibility .3s, opacity .3s linear;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .modal-window_open {
+    visibility: visible;
+  
+    opacity: 1;
+    /* элемент видим для мыши */
+    pointer-events: auto;
+    background-color: aliceblue;
+  }
+
+
+  .scroll-cancel {
+    overflow: hidden; 
+  }
+
+  .link-button {
+    background-color: rgb(79, 79, 243);
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    color:aliceblue;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.message {
+    border: 1px solid red;
+    /* тут будут стили для текста сообщения */
+}
+
+.link-button:hover {
+    opacity: 0.7;
+}

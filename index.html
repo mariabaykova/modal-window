@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="shadow" id="wrapper-shadow"></div>
+            <!-- <div class="link-button"> -->
+            <a href="./second.html" class="link-button">Go!</a>
+            <!-- <button>Open modal-window</button> -->
+                
+            <!-- </div> -->
+            <p>Это просто тестовая страница, чтобы попробовать работу модального окна, которое я сделала. 
+            </p>
+            <p>Тут есть ссылка, стилизованная под кнопку вверху страницы, кнопка для открытия модального окна специально расположена внизу, чтобы до нее нужно было доскроллить.</p>
+
+            <p>id=wrapper-shadow - это тень для окна, этот блок сначала скрывается, но показывается, когда возникает модальное окно.</p>
+            <p>Модальное окно - это блок id="modal-window-id". Он уже есть на странице. Но он сначала скрыт. Пока мне кажется это более-менее нормальным решением. Ему просто стиль для видимости добавляется при клике на кнопку.</p>
+
+            <p>Кнопке id="button-open" добавляется прослушка клика. При клике открывается модальное окно, отменяется прокрутка документа, затемняется окно и включается прослушка клика по элементу document. </p>
+            <p>ПРи обработке клика по документу есть условие: btnTarget != target - а это исключает немедленное закрытие нашего окна по событию "клик по кнопке", которое по сути является кликом вне модального окна</p>
+            <p>Если клик вне окна - очистить сожержимое окна, закрыть его, убрав стиль для видимости, удалить прослушку документа. </p>
+            <p>Ну как?..</p>
+
+
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quos quam voluptatem! Facere, repudiandae sed. Tenetur at facere nam veritatis alias tempora provident error in, blanditiis velit corporis praesentium consequatur!</span>
+
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque autem deserunt, exercitationem odio esse repellat eum molestiae mollitia distinctio, ex error, voluptatem eaque harum porro veniam quaerat. Rem, tempore ducimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus fuga at molestiae veritatis laborum tempore asperiores quia vitae voluptas odit iste, id ratione tenetur nemo, cupiditate illo facere, in maiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quas sit accusamus ea libero veritatis ipsum itaque blanditiis obcaecati praesentium hic officiis omnis quibusdam autem, expedita ullam dolorum tempore? Tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod ratione culpa illum accusamus placeat. Incidunt dolore perspiciatis officia, vero quos corrupti soluta, optio maxime sapiente rerum velit atque suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium, sequi a facere quia maxime tenetur delectus praesentium nobis ea amet optio eos corporis dolore fugiat consequatur ullam distinctio odio.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est error explicabo enim culpa nostrum quod, perspiciatis vero voluptatibus modi, maiores, quos omnis magni repellendus nemo? Nemo unde adipisci laboriosam non?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem non necessitatibus, dolores, quae suscipit laboriosam sapiente provident ipsam veniam minima officia consequuntur pariatur consequatur! Dolorum fuga molestiae minima ea. lorw
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minima sint soluta eligendi beatae delectus tempore perspiciatis eaque fuga consequatur modi necessitatibus ducimus dolorem, ipsa rerum voluptate veritatis a quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique obcaecati cumque veniam tempore illum dolorem dolores sit, soluta quasi labore excepturi laudantium temporibus nobis aut ullam suscipit delectus corporis.
+            </span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa ipsam harum, mollitia unde voluptatibus porro vero ea incidunt, doloribus impedit voluptatum facere recusandae totam expedita, eligendi nemo repudiandae facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum id unde aspernatur, necessitatibus reiciendis praesentium debitis dicta quasi expedita soluta voluptatum inventore laudantium reprehenderit quibusdam saepe! Quidem, cupiditate commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus culpa reiciendis nemo, vero accusamus omnis in ipsa, praesentium asperiores provident numquam illum beatae facilis ea aliquid perferendis, aliquam laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illum, temporibus perspiciatis adipisci vero ea iste est aspernatur ipsum autem harum quibusdam, suscipit architecto in repellendus tempora fuga labore debitis!</span>
+
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa ipsam harum, mollitia unde voluptatibus porro vero ea incidunt, doloribus impedit voluptatum facere recusandae totam expedita, eligendi nemo repudiandae facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum id unde aspernatur, necessitatibus reiciendis praesentium debitis dicta quasi expedita soluta voluptatum inventore laudantium reprehenderit quibusdam saepe! Quidem, cupiditate commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus culpa reiciendis nemo, vero accusamus omnis in ipsa, praesentium asperiores provident numquam illum beatae facilis ea aliquid perferendis, aliquam laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illum, temporibus perspiciatis adipisci vero ea iste est aspernatur ipsum autem harum quibusdam, suscipit architecto in repellendus tempora fuga labore debitis!</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa ipsam harum, mollitia unde voluptatibus porro vero ea incidunt, doloribus impedit voluptatum facere recusandae totam expedita, eligendi nemo repudiandae facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum id unde aspernatur, necessitatibus reiciendis praesentium debitis dicta quasi expedita soluta voluptatum inventore laudantium reprehenderit quibusdam saepe! Quidem, cupiditate commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus culpa reiciendis nemo, vero accusamus omnis in ipsa, praesentium asperiores provident numquam illum beatae facilis ea aliquid perferendis, aliquam laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illum, temporibus perspiciatis adipisci vero ea iste est aspernatur ipsum autem harum quibusdam, suscipit architecto in repellendus tempora fuga labore debitis!</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa ipsam harum, mollitia unde voluptatibus porro vero ea incidunt, doloribus impedit voluptatum facere recusandae totam expedita, eligendi nemo repudiandae facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum id unde aspernatur, necessitatibus reiciendis praesentium debitis dicta quasi expedita soluta voluptatum inventore laudantium reprehenderit quibusdam saepe! Quidem, cupiditate commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus culpa reiciendis nemo, vero accusamus omnis in ipsa, praesentium asperiores provident numquam illum beatae facilis ea aliquid perferendis, aliquam laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illum, temporibus perspiciatis adipisci vero ea iste est aspernatur ipsum autem harum quibusdam, suscipit architecto in repellendus tempora fuga labore debitis!</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa ipsam harum, mollitia unde voluptatibus porro vero ea incidunt, doloribus impedit voluptatum facere recusandae totam expedita, eligendi nemo repudiandae facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum id unde aspernatur, necessitatibus reiciendis praesentium debitis dicta quasi expedita soluta voluptatum inventore laudantium reprehenderit quibusdam saepe! Quidem, cupiditate commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus culpa reiciendis nemo, vero accusamus omnis in ipsa, praesentium asperiores provident numquam illum beatae facilis ea aliquid perferendis, aliquam laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illum, temporibus perspiciatis adipisci vero ea iste est aspernatur ipsum autem harum quibusdam, suscipit architecto in repellendus tempora fuga labore debitis!</span>
+            <button id="button-open">Open modal-window</button>
+            <div class="modal-window" id="modal-window-id">
+            </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
