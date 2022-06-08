@@ -30,7 +30,7 @@
       z-index: 100;
       visibility: hidden; 
       opacity: 0;
-      transition: visibility .3s, opacity .3s linear;
+      transition: visibility 0.35s, opacity 0.35s linear;
 
       display: flex;
       justify-content: center;
@@ -44,7 +44,7 @@
     visibility: visible;
   
     opacity: 1;
-    transition: visibility .5s, opacity .5s linear;
+    transition: visibility 0.35s, opacity 0.35s linear;
     /* элемент видим для мыши */
     pointer-events: auto;
 
@@ -55,6 +55,19 @@
   .scroll-cancel {
     overflow: hidden; 
   }
+
+  .message {
+    /* border: 1px solid red; */
+    /* тут будут стили для текста сообщения */
+
+    font-size: 16px;
+    color: #434242;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: #333333 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
   .link-button {
     background-color: rgb(79, 79, 243);
@@ -70,19 +83,6 @@
     align-items: center;
 
     text-decoration: none;
-}
-
-.message {
-    /* border: 1px solid red; */
-    /* тут будут стили для текста сообщения */
-
-    font-size: 16px;
-    color: #434242;
-    font-family: Arial, Helvetica, sans-serif;
-    /* border: #333333 1px solid; */
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 .link-button:hover {

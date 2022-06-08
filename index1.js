@@ -79,7 +79,11 @@ function openModalWindow( message ) {
     // создать окно
     const modalWin = document.createElement("div");
     modalWin.classList.add("modal-window");
-    modalWin.classList.add("modal-window_open");
+    setTimeout(() => {
+        // для плавного открытия окна небольшой таймаут, чтобы окно сначала добавилось прозрачным, а потом сстало плавно непрозрачным
+        modalWin.classList.add("modal-window_open");
+      }, "10");
+    // modalWin.classList.add("modal-window_open");
 
     // затемнить страницу
     shadowElem.style.display = "";
