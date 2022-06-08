@@ -35,6 +35,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      padding: 15px;
       
   }
 
@@ -42,8 +44,10 @@
     visibility: visible;
   
     opacity: 1;
+    transition: visibility .5s, opacity .5s linear;
     /* элемент видим для мыши */
     pointer-events: auto;
+
     background-color: aliceblue;
   }
 
@@ -69,8 +73,16 @@
 }
 
 .message {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* тут будут стили для текста сообщения */
+
+    font-size: 16px;
+    color: #434242;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: #333333 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .link-button:hover {
